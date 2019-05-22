@@ -9,3 +9,7 @@ A [Nord](https://www.nordtheme.com/) colorscheme for Kakoune
 plug "abuffseagull/nord.kak" theme config %{ colorscheme nord }
 ```
 Or just plop `nord.kak` into your `$KAK_CONFIG/colors` folder.
+
+## Open to criticism
+Since this is more or less my interpretation for the [colors and palettes](https://www.nordtheme.com/docs/colors-and-palettes),
+I'm more than open to suggestions as to better choices for which colors to use where.
