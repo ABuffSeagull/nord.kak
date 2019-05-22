@@ -6,7 +6,7 @@ A [Nord](https://www.nordtheme.com/) colorscheme for Kakoune
 ## Installation
 [plug.kak](https://github.com/andreyorst/plug.kak#Installing-color-schemes):
 ```sh
-plug "abuffseagull/nord.kak" theme config %{ colorscheme nord }
+plug "abuffseagull/nord.kak" theme %{ colorscheme nord }
 ```
 Or just plop `nord.kak` into your `$KAK_CONFIG/colors` folder.
 
