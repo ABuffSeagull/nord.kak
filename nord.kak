@@ -1,97 +1,141 @@
-# text
-# set-face global title rgb:bac5d8,default+b
-# set-face global header rgb:e6e6e6,default
-# set-face global bold rgb:e6e6e6,default+b
-# set-face global italic rgb:d6d6d6,default+i
-# set-face global mono rgb:b8b8b8,rgb:1f1f1f
-# set-face global block rgb:b8b8b8,rgb:1f1f1f
-# set-face global link rgb:e6e6e6,default
-# set-face global bullet rgb:e6e6e6,default
-# set-face global list rgb:c7c7c7,default
+declare-option -hidden str nord0  rgb:2E3440
+declare-option -hidden str nord1  rgb:3B4252
+declare-option -hidden str nord2  rgb:434C5E
+declare-option -hidden str nord3  rgb:4C566A
+declare-option -hidden str nord4  rgb:D8DEE9
+declare-option -hidden str nord5  rgb:E5E9F0
+declare-option -hidden str nord6  rgb:ECEFF4
+declare-option -hidden str nord7  rgb:8FBCBB
+declare-option -hidden str nord8  rgb:88C0D0
+declare-option -hidden str nord9  rgb:81A1C1
+declare-option -hidden str nord10 rgb:5E81AC
+declare-option -hidden str nord11 rgb:BF616A
+declare-option -hidden str nord12 rgb:D08770
+declare-option -hidden str nord13 rgb:EBCB8B
+declare-option -hidden str nord14 rgb:A3BE8C
+declare-option -hidden str nord15 rgb:B48EAD
 
-set-face global value rgb:b48ead,default
-set-face global type rgb:8fbcbb,default
-set-face global identifier rgb:88c0d0,default
-set-face global string rgb:a3be8c,default
-set-face global error rgb:BF616A,default
-set-face global keyword rgb:81a1c1,default
-set-face global operator rgb:c7c7c7,default
-set-face global attribute rgb:5e81ac,default
-set-face global comment rgb:4c566a,default
-set-face global meta rgb:ebcb8b,default
+set-face global Default            "%opt{nord6},%opt{nord0}"
+set-face global PrimarySelection   "default,%opt{nord2}"
+set-face global SecondarySelection "default,%opt{nord2}"
+set-face global PrimaryCursor      "%opt{nord0},%opt{nord4}"
+set-face global SecondaryCursor    "%opt{nord0},%opt{nord1}"
+set-face global PrimaryCursorEol   "%opt{nord0},%opt{nord4}"
+set-face global SecondaryCursorEol "%opt{nord0},%opt{nord1}"
+set-face global MenuForeground     "default,%opt{nord1}"
+set-face global MenuBackground     "default,%opt{nord1}"
+set-face global MenuInfo           "default,%opt{nord1}"
+set-face global Information        "default,%opt{nord1}"
+set-face global Error              "%opt{nord11},default"
+set-face global DiagnosticError    "%opt{nord11},default+c"
+set-face global DiagnosticWarning  "%opt{nord13},default+c"
+set-face global StatusLine         "default,%opt{nord1}"
+set-face global StatusLineMode     "default,%opt{nord1}"
+set-face global StatusLineInfo     "default,%opt{nord1}"
+set-face global StatusLineValue    "default,%opt{nord1}"
+set-face global StatusCursor       "%opt{nord6},%opt{nord4}"
+set-face global Prompt             "default,%opt{nord1}"
+set-face global BufferPadding      "default,default"
+set-face global LineNumbers        "default,%opt{nord1}"
+set-face global LineNumberCursor   "default,%opt{nord2}"
+set-face global LineNumbersWrapped "default,%opt{nord1}"
+set-face global MatchingChar       "rgb:FF00FF,rgb:FF00FF"
+set-face global Whitespace         "%opt{nord3},default"
+set-face global WrapMarker         "%opt{nord3},default"
+set-face global value              "%opt{nord15},default"
+set-face global type               "%opt{nord7},default"
+set-face global identifier         "%opt{nord4},default"
+set-face global string             "%opt{nord14},default"
+set-face global error              "%opt{nord11},default"
+set-face global keyword            "%opt{nord9},default"
+set-face global operator           "%opt{nord9},default"
+set-face global attribute          "%opt{nord9},default"
+set-face global comment            "%opt{nord3},default+i"
+set-face global meta               "%opt{nord9},default"
 
-set-face global Default rgb:eceff4,rgb:2e3440
-    # default colors
-
-set-face global PrimarySelection rgb:2e3440,rgb:e5e9f0
-    # main selection face for every selected character except the cursor
-
-set-face global SecondarySelection rgb:eceff4,rgb:434c5e
-    # secondary selection face for every selected character except the cursor
-
-set-face global PrimaryCursor rgb:2e3440,rgb:ebcb8b
-    # cursor of the primary selection
-
-set-face global SecondaryCursor rgb:2e3440,rgb:d8dee9
-    # cursor of the secondary selection
-
-# set-face global PrimaryCursorEol
-    # cursor of the primary selection when it lies on and end of line character
-
-# set-face global SecondaryCursorEol
-    # cursor of the secondary selection when it lies on and end of line character
-
-set-face global MenuForeground rgb:d8dee9,rgb:4c566a
-    # face for the selected element in menus
-
-set-face global MenuBackground default,rgb:3b4252
-    # face for the not selected elements in menus
-
-set-face global MenuInfo default,rgb:3b4252
-    # face for additional information for elements in menus
-
-set-face global Information rgb:2e3440,rgb:88c0d0
-    # face for the informations windows and information messages
-
-# set-face global Error
-    # face of error messages
-
-set-face global StatusLine rgb:e5e9f0,rgb:3b4252
-    # face used for the status line
-
-set-face global StatusLineMode rgb:5e81ac,rgb:3b4252
-    # face used for the current mode except the normal mode
-
-set-face global StatusLineInfo rgb:5e81ac,rgb:3b4252
-	# face used for special information
-
-set-face global StatusLineValue rgb:5e81ac,rgb:3b4252
-    # face used for special values (numeric prefixes, registers, etc.)
-
-set-face global StatusCursor rgb:2e3440,rgb:ebcb8b
-	# face used for the status line cursor
-
-set-face global Prompt rgb:88c0d0,rgb:3b4252
-    # face used prompt displayed on the status line
-
-set-face global BufferPadding default,default
-    # face applied on the ~ characters that follow the last line of a buffer
-
-# set-face global Builtin highlighters faces
-
-# The following faces are used by builtin highlighters if enabled.
-
-# set-face global LineNumbers
-    # face used by the number-lines highlighter
-
-# set-face global LineNumberCursor
-    # face used to highlight the line number of the main selection
-
-# set-face global LineNumbersWrapped
-    # face used to highlight the line number of wrapped lines
-
-# set-face global MatchingChar
-    # face used by the show-matching highlighter
-
-# set-face global Whitespace
-    # face used by the show-whitespaces highlighter
+set-face global ts_attribute                    "%opt{nord9},default"
+set-face global ts_comment                      "%opt{nord3},default+i"
+# set-face global ts_conceal                      "rgb:FF00FF,rgb:FF00FF"
+set-face global ts_constant                     "%opt{nord4},default"
+set-face global ts_constant_builtin_boolean     "%opt{nord9},default"
+set-face global ts_constant_character           "%opt{nord15},default"
+set-face global ts_constant_character_escape    "%opt{nord13},default"
+set-face global ts_constant_macro               "%opt{nord9},default"
+set-face global ts_constant_numeric             "%opt{nord15},default"
+set-face global ts_constructor                  "%opt{nord8},default"
+set-face global ts_diff_plus                    "%opt{nord14},default"
+set-face global ts_diff_minus                   "%opt{nord11},default"
+set-face global ts_diff_delta                   "%opt{nord13},default"
+set-face global ts_error                        "%opt{nord11},default"
+set-face global ts_function                     "%opt{nord8},default"
+set-face global ts_function_builtin             "%opt{nord7},default"
+set-face global ts_function_macro               "%opt{nord9},default"
+set-face global ts_function_special             "%opt{nord9},default"
+set-face global ts_hint                         "%opt{nord10},default"
+set-face global ts_info                         "%opt{nord8},default"
+set-face global ts_keyword                      "%opt{nord9},default"
+set-face global ts_keyword_control              "%opt{nord9},default"
+set-face global ts_keyword_conditional          "%opt{nord9},default"
+set-face global ts_keyword_control_conditional  "%opt{nord9},default"
+set-face global ts_keyword_control_directive    "%opt{nord9},default"
+set-face global ts_keyword_control_import       "%opt{nord9},default"
+set-face global ts_keyword_control_repeat       "%opt{nord9},default"
+set-face global ts_keyword_control_return       "%opt{nord9},default"
+set-face global ts_keyword_control_except       "%opt{nord9},default"
+set-face global ts_keyword_control_exception    "%opt{nord9},default"
+set-face global ts_keyword_directive            "%opt{nord9},default"
+set-face global ts_keyword_function             "%opt{nord9},default"
+set-face global ts_keyword_operator             "%opt{nord9},default"
+set-face global ts_keyword_special              "%opt{nord9},default"
+set-face global ts_keyword_storage              "%opt{nord9},default"
+set-face global ts_keyword_storage_modifier     "%opt{nord9},default"
+set-face global ts_keyword_storage_modifier_mut "%opt{nord9},default"
+set-face global ts_keyword_storage_modifier_ref "%opt{nord9},default"
+set-face global ts_keyword_storage_type         "%opt{nord9},default"
+set-face global ts_label                        "%opt{nord7},default"
+# set-face global ts_markup_bold                  "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading               "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading_1             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading_2             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading_3             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading_4             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading_5             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading_6             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_heading_marker        "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_italic                "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_list_checked          "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_list_numbered         "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_list_unchecked        "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_list_unnumbered       "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_link_label            "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_link_url              "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_link_uri              "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_link_text             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_quote                 "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_raw                   "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_raw_block             "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_raw_inline            "rgb:FF00FF,rgb:FF00FF"
+# set-face global ts_markup_strikethrough         "rgb:FF00FF,rgb:FF00FF"
+set-face global ts_namespace                    "%opt{nord4},default"
+set-face global ts_operator                     "%opt{nord9},default"
+set-face global ts_property                     "%opt{nord4},default"
+set-face global ts_punctuation                  "%opt{nord6},default"
+set-face global ts_punctuation_bracket          "%opt{nord6},default"
+set-face global ts_punctuation_delimiter        "%opt{nord6},default"
+set-face global ts_punctuation_special          "%opt{nord9},default"
+set-face global ts_special                      "%opt{nord9},default"
+# set-face global ts_spell                        "rgb:FF00FF,rgb:FF00FF"
+set-face global ts_string                       "%opt{nord14},default"
+set-face global ts_string_regex                 "%opt{nord13},default"
+set-face global ts_string_regexp                "%opt{nord13},default"
+set-face global ts_string_escape                "%opt{nord13},default"
+set-face global ts_string_special               "%opt{nord13},default"
+set-face global ts_tag                          "%opt{nord7},default"
+set-face global ts_text                         "%opt{nord4},default"
+set-face global ts_type                         "%opt{nord7},default"
+set-face global ts_type_builtin                 "%opt{nord7},default"
+set-face global ts_variable                     "%opt{nord4},default"
+set-face global ts_variable_builtin             "%opt{nord9},default"
+set-face global ts_variable_other_member        "%opt{nord4},default"
+set-face global ts_variable_parameter           "%opt{nord9},default"
+set-face global ts_warning                      "%opt{nord13},default"
